@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <style>
+        .grid-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 50%;
+            height:630px;
+            margin:50px auto 0;
+            padding: 10px;
+            gap: 10px;
+            border: 2px solid black;
+            box-shadow: 4px 5px 10px gray;
+           grid-template-areas: 
+           'grid1 grid2 grid3'
+            'grid1 grid5 grid3'
+            'grid4 grid5 grid6';   
+        }
+       .grid1{
+        grid-area: grid1;
+        background-image: url(./grid1.jpg);
+        background-size: cover;
+       }
+       .grid2{
+        grid-area: grid2;
+        background-image: url(./grid2.png);
+        background-size: cover;
+       }
+        .grid3{
+        grid-area: grid3;
+        background-image: url(./grid3.jpg);
+        background-size: cover;
+       }
+        .grid4{
+        grid-area: grid4;
+        background-image: url(./grid4.jpg);
+        background-size: cover;
+       }
+        .grid5{
+        grid-area: grid5;
+        background-image: url(./grid5.jpg);
+        background-size: cover;
+       }
+        .grid6{
+        grid-area: grid6;
+        background-image: url(./grid6.png);
+        background-size: cover;
+       }
+    </style>
+</head>
+
+<body>
+        <div class="grid-items">
+            <div class="grid1"> </div>
+            <div class="grid2"> </div>
+            <div class="grid3"> </div>
+            <div class="grid4"> </div>
+            <div class="grid5"> </div>
+            <div class="grid6"> </div>
+        </div>
+</body>
+
+</html>
